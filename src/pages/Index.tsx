@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Terms from "@/components/Terms";
+import PrivacyPolicy from "@/components/PrivacyPolicy";
 import { MapPin, Users, Calendar, ChevronRight, Utensils } from "lucide-react";
 
 const Index = () => {
@@ -89,9 +90,7 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-6 text-sm">
             <Terms />
-            <a href="#" className="text-rightlane-mint hover:text-rightlane-dark transition-colors">
-              Privacy Policy
-            </a>
+            <PrivacyPolicy />
           </div>
         </div>
       </footer>
