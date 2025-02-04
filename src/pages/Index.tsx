@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rightlane-sage via-rightlane-light to-rightlane-peach">
       {/* Logo */}
-      <div className="absolute top-6 left-6 flex items-center gap-2">
+      <div className="absolute top-6 left-6 flex items-center gap-2 z-50">
         <Utensils className="h-8 w-8 text-rightlane-mint" />
         <span className="text-2xl font-bold text-rightlane-dark">RightLane</span>
       </div>
