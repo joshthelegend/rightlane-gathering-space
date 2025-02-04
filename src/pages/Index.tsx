@@ -16,10 +16,10 @@ const Index = () => {
               Coming Soon to India
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-rightlane-dark">
-              Find Your <span className="text-rightlane-mint">Right</span> Community
+              AI-Matched Dinner <span className="text-rightlane-mint">With New Friends</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Connect with like-minded people, join exciting meetups, and create meaningful relationships in your city.
+              Meet like-minded people over delicious meals. Our AI matches you with dinner companions based on your interests, making friend-finding as natural as sharing a meal.
             </p>
             <div className="flex justify-center gap-4">
               <Button className="bg-rightlane-mint hover:bg-rightlane-dark text-white">
@@ -37,23 +37,23 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 bg-white/20 backdrop-blur-md border-rightlane-mint/20 hover:border-rightlane-mint/40 transition-colors animate-slideUp [animation-delay:200ms]">
               <MapPin className="h-8 w-8 text-rightlane-mint mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-rightlane-dark">Local Meetups</h3>
+              <h3 className="text-xl font-semibold mb-2 text-rightlane-dark">Smart Matching</h3>
               <p className="text-gray-600">
-                Discover events and meetups happening right in your neighborhood.
+                Our AI pairs you with dinner companions who share your interests and conversation style.
               </p>
             </Card>
             <Card className="p-6 bg-white/20 backdrop-blur-md border-rightlane-mint/20 hover:border-rightlane-mint/40 transition-colors animate-slideUp [animation-delay:400ms]">
               <Users className="h-8 w-8 text-rightlane-mint mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-rightlane-dark">Community First</h3>
+              <h3 className="text-xl font-semibold mb-2 text-rightlane-dark">Curated Dinners</h3>
               <p className="text-gray-600">
-                Join communities that share your interests and passions.
+                Enjoy meaningful conversations over carefully selected restaurants in your city.
               </p>
             </Card>
             <Card className="p-6 bg-white/20 backdrop-blur-md border-rightlane-mint/20 hover:border-rightlane-mint/40 transition-colors animate-slideUp [animation-delay:600ms]">
               <Calendar className="h-8 w-8 text-rightlane-mint mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-rightlane-dark">Easy Planning</h3>
+              <h3 className="text-xl font-semibold mb-2 text-rightlane-dark">Regular Meetups</h3>
               <p className="text-gray-600">
-                Create and manage events with our intuitive tools.
+                Build lasting friendships through regular dinner gatherings with your matched group.
               </p>
             </Card>
           </div>
@@ -68,7 +68,7 @@ const Index = () => {
               Get in Touch
             </h2>
             <p className="text-gray-600 max-w-xl mx-auto">
-              Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Have questions about our AI-matched dinner meetups? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
             </p>
           </div>
           <ContactForm />
