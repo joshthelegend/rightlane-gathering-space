@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Terms from "@/components/Terms";
 import PrivacyPolicy from "@/components/PrivacyPolicy";
+import WaitlistForm from "@/components/WaitlistForm";
 import { MapPin, Users, Calendar, ChevronRight, Utensils } from "lucide-react";
 
 const Index = () => {
@@ -28,12 +29,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Meet like-minded people over delicious meals. Our AI matches you with dinner companions based on your interests, making friend-finding as natural as sharing a meal.
             </p>
-            <div className="flex justify-center gap-4">
-              <Button className="bg-rightlane-mint hover:bg-rightlane-dark text-white">
-                Join Waitlist
-                <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
+            <WaitlistForm />
           </div>
         </div>
       </section>
