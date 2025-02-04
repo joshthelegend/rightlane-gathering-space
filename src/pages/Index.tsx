@@ -2,11 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Terms from "@/components/Terms";
-import { MapPin, Users, Calendar, ChevronRight } from "lucide-react";
+import { MapPin, Users, Calendar, ChevronRight, Utensils } from "lucide-react";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rightlane-sage via-rightlane-light to-rightlane-peach">
+      {/* Logo */}
+      <div className="absolute top-6 left-6 flex items-center gap-2">
+        <Utensils className="h-8 w-8 text-rightlane-mint" />
+        <span className="text-2xl font-bold text-rightlane-dark">RightLane</span>
+      </div>
+
       {/* Hero Section */}
       <section className="relative py-20 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-white/5 backdrop-blur-sm" />
