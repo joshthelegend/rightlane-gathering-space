@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -27,13 +26,13 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto">
+    <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto bg-white/20 backdrop-blur-md p-8 rounded-lg border border-rightlane-mint/20">
       <div className="space-y-2">
         <Input
           type="text"
           placeholder="Your Name"
           required
-          className="bg-white/50 backdrop-blur-sm border-rightlane-purple/20"
+          className="bg-white/50 backdrop-blur-sm border-rightlane-mint/20"
         />
       </div>
       <div className="space-y-2">
@@ -41,27 +40,27 @@ export default function ContactForm() {
           type="email"
           placeholder="Email Address"
           required
-          className="bg-white/50 backdrop-blur-sm border-rightlane-purple/20"
+          className="bg-white/50 backdrop-blur-sm border-rightlane-mint/20"
         />
       </div>
       <div className="space-y-2">
         <Input
           type="tel"
           placeholder="Phone Number"
-          className="bg-white/50 backdrop-blur-sm border-rightlane-purple/20"
+          className="bg-white/50 backdrop-blur-sm border-rightlane-mint/20"
         />
       </div>
       <div className="space-y-2">
         <Textarea
           placeholder="Your Message"
           required
-          className="min-h-[100px] bg-white/50 backdrop-blur-sm border-rightlane-purple/20"
+          className="min-h-[100px] bg-white/50 backdrop-blur-sm border-rightlane-mint/20"
         />
       </div>
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-rightlane-purple hover:bg-rightlane-dark transition-colors"
+        className="w-full bg-rightlane-mint hover:bg-rightlane-dark transition-colors"
       >
         {isSubmitting ? (
           "Sending..."
@@ -73,7 +72,7 @@ export default function ContactForm() {
         )}
       </Button>
 
-      <div className="mt-8 space-y-4 text-sm text-muted-foreground">
+      <div className="mt-8 space-y-4 text-sm text-gray-600">
         <div className="flex items-center gap-2">
           <Mail className="h-4 w-4" />
           <span>support@rightlane.com</span>

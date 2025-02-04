@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -8,10 +7,10 @@ export default function Terms() {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger className="text-sm text-rightlane-purple hover:text-rightlane-dark transition-colors">
+      <DialogTrigger className="text-sm text-rightlane-mint hover:text-rightlane-dark transition-colors">
         Terms and Conditions
       </DialogTrigger>
-      <DialogContent className="max-w-2xl">
+      <DialogContent className="max-w-2xl bg-white/90 backdrop-blur-md">
         <DialogHeader>
           <DialogTitle>Terms and Conditions</DialogTitle>
         </DialogHeader>
