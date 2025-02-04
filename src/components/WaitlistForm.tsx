@@ -15,12 +15,17 @@ export default function WaitlistForm() {
     setIsSubmitting(true);
     
     try {
+      console.log('Attempting to submit to waitlist...');
       const { error } = await supabase
         .from('waitlist')
         .insert([{ email, created_at: new Date().toISOString() }]);
 
-      if (error) throw error;
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
+      }
 
+      console.log('Successfully joined waitlist');
       toast({
         title: "Success!",
         description: "You've been added to our waitlist. We'll notify you when we launch!",
