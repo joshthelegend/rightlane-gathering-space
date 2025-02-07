@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { ChevronRight } from "lucide-react";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
 
 export default function WaitlistForm() {
   const { toast } = useToast();
@@ -15,12 +15,17 @@ export default function WaitlistForm() {
     setIsSubmitting(true);
     
     try {
+      console.log('Attempting to submit to waitlist...');
       const { error } = await supabase
         .from('waitlist')
         .insert([{ email, created_at: new Date().toISOString() }]);
 
-      if (error) throw error;
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
+      }
 
+      console.log('Successfully joined waitlist');
       toast({
         title: "Success!",
         description: "You've been added to our waitlist. We'll notify you when we launch!",
