@@ -8,4 +8,20 @@ if (!supabaseUrl || !supabaseAnonKey) {
   console.error('Supabase URL and Anon Key are required. Please connect to Supabase in your project settings.');
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Create a dummy client that throws errors when used if credentials are missing
+export const supabase = !supabaseUrl || !supabaseAnonKey
+  ? {
+      from: () => {
+        throw new Error('Please connect to Supabase in your project settings before using database features.');
+      },
+      // Add other commonly used methods
+      auth: {
+        signIn: () => {
+          throw new Error('Please connect to Supabase in your project settings before using authentication features.');
+        },
+        signUp: () => {
+          throw new Error('Please connect to Supabase in your project settings before using authentication features.');
+        }
+      }
+    }
+  : createClient(supabaseUrl, supabaseAnonKey);
